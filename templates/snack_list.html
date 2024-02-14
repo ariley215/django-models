@@ -9,10 +9,10 @@
 
   <ul>
     <a href="{% url 'snack_detail' snack.pk %}">
-      {{thing.name}}
+      {{snack.name}}
     </a>
-    <p>{{thing.rating}}</p>
-    <p>{{thing.purchaser}}</p>
+    <p>{{snack.rating}}</p>
+    <p>{{snack.purchaser}}</p>
   </ul>
   {% endfor %}
 
