@@ -1,12 +1,11 @@
-# LAB - Class xx
-
+# LAB - Class 27
 Project: Django Models
 
 Author: Andrea Riley(Thiel)
 
-## Feature Tasks 
+## Feature Tasks
 
-Model
+Model *completed 02-14-2024 11:00AM EST*
 
 - create snack_tracker_project project
 - This will involve some preliminary steps.
@@ -65,35 +64,38 @@ Templates *completed 02-13-2024 10:00PM EST*
 - add link in snack_list template to related detail page for each snack
 - Add a link back to Home (aka snack_list) page from detail page.
 
-User Acceptance Tests
+User Acceptance Tests *completed 02-14-2024 11:15AM EST*
 
-Test Snack pages
-NOTE make sure test extends TestCase instead of SimpleTestCase used in previous class.
-verify status code
-verify correct template use
-use url name instead of hard coded path
-TIP: django.urls.reverse will help with that.
-We can’t easily test SnackDetailView just yet.
-Can you figure out why?
+- Test Snack pages
+  - NOTE make sure test extends TestCase instead of SimpleTestCase used in previous class.
+- verify status code
+- verify correct template use
+- use url name instead of hard coded path
+  - TIP: django.urls.reverse will help with that.
+
 
 ## Links and Resources
 
-back-end server url (when applicable)
-front-end application (when applicable)
+<http://127.0.0.1:8000/>
 
 ## Setup
 
-.env requirements (where applicable)
-i.e.
+.env requirements:
 
-PORT - Port Number
-DATABASE_URL - URL to the running Postgres instance/db
+  .venv
 
-How to initialize/run your application (where applicable)
+How to initialize/run your application:
 
-e.g. python main.py
+ python manage.py runserver
+
 How to use your library (where applicable)
-Tests
-How do you run tests?
-Any tests of note?
-Describe any tests that you did not complete, skipped, etc
+
+  pip install -r requirements.txt
+
+  npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch
+
+## Tests
+
+python manage.py test
+
+Tests for responses from the urls
