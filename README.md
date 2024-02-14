@@ -46,7 +46,7 @@ Views for Snacks App *completed 02-13-2024 9:35PM EST*
   - account for primary key in url
   - path would look like localhost:8000/1/ to get to snack with id of 1
 
-Templates
+Templates *completed 02-13-2024 10:00PM EST*
 
 - Add templates folder in root of project
   - register templates folder in project settings TEMPLATES section
@@ -60,10 +60,13 @@ Templates
 - create snack_detail.html template
   - template should extend base
   - content should display snack’s name, description and purchaser
+
+
 - add link in snack_list template to related detail page for each snack
 - Add a link back to Home (aka snack_list) page from detail page.
 
 User Acceptance Tests
+
 Test Snack pages
 NOTE make sure test extends TestCase instead of SimpleTestCase used in previous class.
 verify status code
